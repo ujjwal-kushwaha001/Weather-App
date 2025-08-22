@@ -24,7 +24,7 @@ function App() {
 
     try {
     	const response = await fetch(url, options);
-    	const result = await response.text();
+    	const result = await response.json();
     	console.log(result);
       setTemp(result.temperature)
       setWind_speed(result.wind_speed)
